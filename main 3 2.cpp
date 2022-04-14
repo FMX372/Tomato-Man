@@ -28,7 +28,7 @@ int main()
             cout<<"Viajero: Siga su camino entonces";
             return 0;
         }
-    cout<<"Misión: Dar un tomate al viajero"<<endl<<"Opciones:"<<endl<<"1.Ir cuesta abajo"<<endl<<"2.Preguntar para qué quiere un tomate"<<endl<<"3.Buscar en tu zurrón"<<endl<<"Opción: ";
+    cout<<"Misión: Dar un tomate al viajero"<<endl<<"Opciones:"<<endl<<"1.Ir cuesta abajo."<<endl<<"2.Preguntar para qué quiere un tomate."<<endl<<"3.Buscar en tu zurrón."<<endl<<"Opción: ";
     cin>>accion;
     /*Opciones a elegir*/
         if (accion == "1")
@@ -38,12 +38,13 @@ int main()
         if (accion == "2")
     {
             cout<<"Viajero: Es una larga historia, prometí comer tomate todos los meses a alguien.";
+            cout<<name<<": Un poco raro";
             
     }
         if (accion == "3")
     {
             cout<<"Encuentras un tomate en un estado cuestionable."<<endl;
-            cout<<name<<"¿Se lo doy?: ";
+            cout<<name<<" :¿Se lo doy?: ";
             cin>>dar;
                 if (dar == "Si")
                 {
