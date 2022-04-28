@@ -33,7 +33,16 @@ int main()
     /*Opciones a elegir*/
         if (accion == "1")
     {
-            cout<<endl<<"Bajas la cuesta y llegas a una taberna";
+            cout<<endl<<"Bajas la cuesta y llegas a una taberna"<<endl;
+            cout<<"Tabernero: Buenas, ¿que le puedo servir?<<endl<<"Elija una opción: | 1-Pedir tomate | 2-Pedir Bacalao con tomate |"<<endl;
+            cin>>acción;
+                if (acción == "1")
+                {
+                    cout<<nombre<<"¿Podrías darme un tomate?";
+                    cout<<"Tabernero: ¿Un tomate?... Bueno si es lo que quieres"<<endl
+                    cout<<"
+                }
+            
     }
         if (accion == "2")
     {
@@ -45,6 +54,7 @@ int main()
             if (accion == "1")
             {
                 cout<<endl<<"Bajas la cuesta y llegas a una taberna";
+
             }
             
     }
