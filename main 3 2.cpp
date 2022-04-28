@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <unistd.h>
 
 using namespace std;
 
@@ -34,13 +35,12 @@ int main()
         if (accion == "1")
     {
             cout<<endl<<"Bajas la cuesta y llegas a una taberna"<<endl;
-            cout<<"Tabernero: Buenas, ¿que le puedo servir?<<endl<<"Elija una opción: | 1-Pedir tomate | 2-Pedir Bacalao con tomate |"<<endl;
-            cin>>acción;
-                if (acción == "1")
+            cout<<"Tabernero: Buenas, ¿que le puedo servir?"<<endl<<"Elija una opción: | 1-Pedir tomate | 2-Pedir Bacalao con tomate |"<<endl;
+            cin>>accion;
+                if (accion == "1")
                 {
-                    cout<<nombre<<"¿Podrías darme un tomate?";
-                    cout<<"Tabernero: ¿Un tomate?... Bueno si es lo que quieres"<<endl
-                    cout<<"
+                    cout<<name<<"¿Podrías darme un tomate?";
+                    cout<<"Tabernero: ¿Un tomate?... Bueno si es lo que quieres"<<endl;
                 }
             
     }
@@ -92,4 +92,3 @@ int main()
     }
     return 0;
 }
-    
