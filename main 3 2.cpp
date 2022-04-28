@@ -39,15 +39,37 @@ int main()
             cin>>accion;
                 if (accion == "1")
                 {
-                    cout<<name<<"¿Podrías darme un tomate?";
-                    cout<<"Tabernero: ¿Un tomate?... Bueno si es lo que quieres"<<endl;
+                    cout<<name<<"¿Podrías darme un tomate?"<<endl;
+                    cout<<"Tabernero: ¿Un tomate?";
+                /*Esto hace que aparezca el texto cada X segundos*/
+                    cout.flush();
+                    sleep(1);
+                    cout<<".";
+                    cout.flush();
+                    sleep(1);
+                    cout<<".";
+                    cout.flush();
+                    sleep(1);
+                    cout<<".";
+                    cout<<"Bueno si es lo que quieres.";
+
                 }
             
     }
         if (accion == "2")
     {
             cout<<endl<<"Viajero: Es una larga historia, prometí comer tomate todos los meses a alguien."<<endl;
-            cout<<name<<": Un poco raro..."<<endl<<endl;
+            cout<<name<<": Un poco raro";
+            /*Esto hace que aparezca el texto cada X segundos*/
+                    cout.flush();
+                    sleep(1);
+                    cout<<".";
+                    cout.flush();
+                    sleep(1);
+                    cout<<".";
+                    cout.flush();
+                    sleep(1);
+                    cout<<"."<<endl<<endl;
             cout<<"Opciones:"<<endl<<"1.Ir cuesta abajo."<<endl<<"2.Buscar en tu zurrón."<<endl<<"Opción: ";
             cin>>accion;
         /*Sub-acciones de acción 2*/
@@ -58,6 +80,8 @@ int main()
             }
             
     }
+    
+    
         if (accion == "3")
     {
             cout<<"Encuentras un tomate en un estado cuestionable."<<endl;
