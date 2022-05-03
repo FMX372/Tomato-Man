@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+/*Solo funcinal en linux o GDB*/
 #include <unistd.h>
 
 using namespace std;
