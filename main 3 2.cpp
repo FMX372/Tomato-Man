@@ -8,15 +8,21 @@ int main()
 {
     string name,respuesta,accion,dar;
     cout<<"Estás haciendo un viaje en Noruega, 1532, un viajero se te acerca."<<endl;
+        cout.flush();
+            sleep(4);
     cout<<"Viajero: Buenas viajero, ¿puedo preguntarle su nombre?"<<endl<<"Nombre: ";
     cin>>name;
     if (name == "No")
     {
+        cout.flush();
+            sleep(2);
         cout<<"Siento molestarle, un saludo.";
         return 0;
     }
     else
     {
+        cout.flush();
+            sleep(2);
     cout<<"Viajero: Encantado de conocerle "<<name<<", me preguntaba si podrías hacerme un favor, te pagaré bien. "<<endl<<name<<": ";
     }
     cin>>respuesta;
@@ -35,6 +41,8 @@ int main()
         if (accion == "1")
     {
             cout<<endl<<"Bajas la cuesta y llegas a una taberna"<<endl;
+                cout.flush();
+                    sleep(2);
             cout<<"Tabernero: Buenas, ¿que le puedo servir?"<<endl<<"Elija una opción: | 1-Pedir tomate | 2-Pedir Bacalao con tomate |"<<endl;
             cin>>accion;
                 if (accion == "1")
@@ -45,10 +53,10 @@ int main()
                     cout.flush();
                     sleep(1);
                     cout<<".";
-                    cout.flush();
+                    cout.flush();                                                                                 
                     sleep(1);
                     cout<<".";
-                    cout.flush();
+                    cout.flush();                                                                                 
                     sleep(1);
                     cout<<".";
                     cout<<"Bueno si es lo que quieres.";
@@ -59,6 +67,8 @@ int main()
         if (accion == "2")
     {
             cout<<endl<<"Viajero: Es una larga historia, prometí comer tomate todos los meses a alguien."<<endl;
+                cout.flush();
+                    sleep(2);
             cout<<name<<": Un poco raro";
             /*Esto hace que aparezca el texto cada X segundos*/
                     cout.flush();
