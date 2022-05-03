@@ -8,6 +8,7 @@ using namespace std;
 int main()
 {
     string name,respuesta,accion,dar;
+    /*Intro al juego*/
     cout<<"Estás haciendo un viaje en Noruega, 1532, un viajero se te acerca."<<endl;
         cout.flush();
             sleep(4);
@@ -60,8 +61,13 @@ int main()
                     cout.flush();                                                                                 
                     sleep(1);
                     cout<<".";
-                    cout<<"Bueno si es lo que quieres.";
-
+                    cout<<"Bueno si es lo que quieres... No creo que deba cobrarle por esto."<<endl;
+                    cout.flush();                                                                                 
+                    sleep(1);
+                    cout<<"Recives un tomate"<<endl;
+                    cout.flush();                                                                                 
+                    sleep(1);
+                    cout<<"Subes la colina de nuevo y te encuentras con el viajero."
                 }
             
     }
@@ -86,8 +92,28 @@ int main()
         /*Sub-acciones de acción 2*/
             if (accion == "1")
             {
-                cout<<endl<<"Bajas la cuesta y llegas a una taberna";
+                cout<<endl<<"Bajas la cuesta y llegas a una taberna"<<endl;
+                cout.flush();
+                    sleep(2);
+            cout<<"Tabernero: Buenas, ¿que le puedo servir?"<<endl<<"Elija una opción: | 1-Pedir tomate | 2-Pedir Bacalao con tomate |"<<endl;
+            cin>>accion;
+                if (accion == "1")
+                {
+                    cout<<name<<"¿Podrías darme un tomate?"<<endl;
+                    cout<<"Tabernero: ¿Un tomate?";
+                /*Esto hace que aparezca el texto cada X segundos*/
+                    cout.flush();
+                    sleep(1);
+                    cout<<".";
+                    cout.flush();                                                                                 
+                    sleep(1);
+                    cout<<".";
+                    cout.flush();                                                                                 
+                    sleep(1);
+                    cout<<".";
+                    cout<<"Bueno si es lo que quieres.";
 
+                }
             }
             
     }
