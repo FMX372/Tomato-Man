@@ -30,25 +30,38 @@ int main()
     cin>>respuesta;
         if (respuesta == "Si")
         {
+            cout.flush();
+                sleep(1);
             cout<<"Viajero: Llevo 1 semana sin comer tomate, si no le es mucha molestia, vaya a la posada más cercana y compreme un tomate, le esperaré aquí."<<endl<<endl;
         }
         else
         {
+            cout.flush();
+                sleep(1);
             cout<<"Viajero: Siga su camino entonces";
             return 0;
         }
+        cout.flush();
+            sleep(5);
     cout<<"Misión: Dar un tomate al viajero"<<endl<<"Opciones:"<<endl<<"1.Ir cuesta abajo."<<endl<<"2.Preguntar para qué quiere un tomate."<<endl<<"3.Buscar en tu zurrón."<<endl<<"Opción: ";
     cin>>accion;
     /*Opciones a elegir*/
         if (accion == "1")
     {
+                cout.flush();
+                    sleep(1);
             cout<<endl<<"Bajas la cuesta y llegas a una taberna"<<endl;
                 cout.flush();
                     sleep(2);
-            cout<<"Tabernero: Buenas, ¿que le puedo servir?"<<endl<<"Elija una opción: | 1-Pedir tomate | 2-Pedir Bacalao con tomate |"<<endl;
+            cout<<"Tabernero: Buenas, ¿que le puedo servir?"<<endl;
+                cout.flush();
+                    sleep(2);
+            cout<<"Elija una opción: | 1-Pedir tomate | 2-Pedir Bacalao con tomate |"<<endl;
             cin>>accion;
                 if (accion == "1")
                 {
+                        cout.flush();
+                            sleep(1);
                     cout<<name<<"¿Podrías darme un tomate?"<<endl;
                     cout<<"Tabernero: ¿Un tomate?";
                 /*Esto hace que aparezca el texto cada X segundos*/
@@ -64,15 +77,17 @@ int main()
                     cout<<"Bueno si es lo que quieres... No creo que deba cobrarle por esto."<<endl;
                     cout.flush();                                                                                 
                     sleep(1);
-                    cout<<"Recives un tomate"<<endl;
+                    cout<<"Recibes un tomate"<<endl;
                     cout.flush();                                                                                 
                     sleep(1);
-                    cout<<"Subes la colina de nuevo y te encuentras con el viajero."
+                    cout<<"Subes la colina de nuevo y te encuentras con el viajero.";
                 }
             
     }
         if (accion == "2")
     {
+                cout.flush();
+                    sleep(2);
             cout<<endl<<"Viajero: Es una larga historia, prometí comer tomate todos los meses a alguien."<<endl;
                 cout.flush();
                     sleep(2);
@@ -121,12 +136,21 @@ int main()
     
         if (accion == "3")
     {
+                cout.flush();
+                    sleep(2);
             cout<<"Encuentras un tomate en un estado cuestionable."<<endl;
+                cout.flush();
+                    sleep(1);
             cout<<name<<" :¿Se lo doy?: ";
             cin>>dar;
                 if (dar == "Si")
                 {
-                    cout<<"Viajero: Esto me servirá, te estaré eternamente agradecido, tome, para usted."<<endl<<"Recibes 15 monedas de plata.";
+                        cout.flush();
+                            sleep(3);
+                    cout<<"Viajero: Esto me servirá, te estaré eternamente agradecido, tome, para usted."<<endl;
+                        cout.flush();
+                            sleep(2);
+                    cout<<"Recibes 15 monedas de plata.";
                     return 0;
                 }
             else
@@ -140,16 +164,27 @@ int main()
                     cout<<endl<<"Bajas la cuesta y llegas a una taberna";
                 }
                 if (accion == "2")
-                {
-                    cout<<"Viajero: Es una larga historia, prometí comer tomate todos los meses a alguien.";
-                    cout<<name<<": Un poco raro";
-            
-            
-                }
+            {
+                    cout.flush();
+                        sleep(2);
+                cout<<endl<<"Viajero: Es una larga historia, prometí comer tomate todos los meses a alguien."<<endl;
+                    cout.flush();
+                        sleep(2);
+                cout<<name<<": Un poco raro";
+            /*Esto hace que aparezca el texto cada X segundos*/
+                    cout.flush();
+                    sleep(1);
+                    cout<<".";
+                    cout.flush();
+                    sleep(1);
+                    cout<<".";
+                    cout.flush();
+                    sleep(1);
+                    cout<<"."<<endl<<endl;
                 
             }
-            
-            
+        }
     }
     return 0;
 }
+/*Honestamente no sé ni como sigue funcionando*/
