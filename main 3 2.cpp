@@ -155,14 +155,48 @@ int main()
                 }
             else
             {
-                cout<<name<<": tendré que buscar en otra parte.";
+                cout<<name<<": Tendré que buscar en otra parte.";
                 cout<<"Opciones:"<<endl<<"1.Ir cuesta abajo."<<endl<<"2.Preguntar para qué quiere un tomate."<<endl<<"Opción: ";
                 cin>>accion;
             /*Sub-acciones de acción 3*/
                 if (accion == "1")
+    {
+                cout.flush();
+                    sleep(1);
+            cout<<endl<<"Bajas la cuesta y llegas a una taberna"<<endl;
+                cout.flush();
+                    sleep(2);
+            cout<<"Tabernero: Buenas, ¿que le puedo servir?"<<endl;
+                cout.flush();
+                    sleep(2);
+            cout<<"Elija una opción: | 1-Pedir tomate | 2-Pedir Bacalao con tomate |"<<endl;
+            cin>>accion;
+                if (accion == "1")
                 {
-                    cout<<endl<<"Bajas la cuesta y llegas a una taberna";
+                        cout.flush();
+                            sleep(1);
+                    cout<<name<<"¿Podrías darme un tomate?"<<endl;
+                    cout<<"Tabernero: ¿Un tomate?";
+                /*Esto hace que aparezca el texto cada X segundos*/
+                    cout.flush();
+                    sleep(1);
+                    cout<<".";
+                    cout.flush();                                                                                 
+                    sleep(1);
+                    cout<<".";
+                    cout.flush();                                                                                 
+                    sleep(1);
+                    cout<<".";
+                    cout<<"Bueno si es lo que quieres... No creo que deba cobrarle por esto."<<endl;
+                    cout.flush();                                                                                 
+                    sleep(1);
+                    cout<<"Recibes un tomate"<<endl;
+                    cout.flush();                                                                                 
+                    sleep(1);
+                    cout<<"Subes la colina de nuevo y te encuentras con el viajero.";
                 }
+            
+    }
                 if (accion == "2")
             {
                     cout.flush();
