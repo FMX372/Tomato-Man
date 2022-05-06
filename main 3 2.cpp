@@ -65,24 +65,45 @@ int main()
                     cout<<name<<"¿Podrías darme un tomate?"<<endl;
                     cout<<"Tabernero: ¿Un tomate?";
                 /*Esto hace que aparezca el texto cada X segundos*/
-                    cout.flush();
-                    sleep(1);
+                        cout.flush();
+                            sleep(1);
                     cout<<".";
-                    cout.flush();                                                                                 
-                    sleep(1);
+                        cout.flush();                                                                                 
+                            sleep(1);
                     cout<<".";
-                    cout.flush();                                                                                 
-                    sleep(1);
+                        cout.flush();                                                                                 
+                            sleep(1);
                     cout<<".";
                     cout<<"Bueno si es lo que quieres... No creo que deba cobrarle por esto."<<endl;
-                    cout.flush();                                                                                 
-                    sleep(1);
+                        cout.flush();                                                                                 
+                            sleep(1);
                     cout<<"Recibes un tomate"<<endl;
-                    cout.flush();                                                                                 
-                    sleep(1);
-                    cout<<"Subes la colina de nuevo y te encuentras con el viajero.";
+                        cout.flush();                                                                                 
+                            sleep(1);
+                    cout<<"Subes la colina de nuevo y te encuentras con el viajero."<<endl;
+                        cout.flush();
+                            sleep(2);
+                    cout<<"Viajero: ¿Ya regresaste? ¿Obtuviste el tomate? Le estaré eternamente agradecido, tome, por las molestias"<<endl;
+                        cout.flush();
+                            sleep(2);
+                    cout<<"Obtienes 20 monedas de plata";
+                    return 0;
                 }
-            
+                    if (accion == "2")
+                    cout<<name<<": Buenas, ¿podría prepararme un bacalao con tomate, preferiblemente con el tomate entero?"<<endl;
+                        cout.flush();
+                            sleep(2);     
+                    cout<<"Tabernero: ...Enseguida se lo preparo"<<endl;
+                        cout.flush();
+                            sleep(2);
+                    cout<<"Te comes el bacalao y llevas el tomate al viajero..."<<endl;
+                        cout.flush();
+                            sleep(2);
+                    cout<<"Viajero: ¿Obtuviste el tomate? Le estaré agradecido por siempre, acepte esto como ofrenda por sus molestias"<<endl;
+                        cout.flush();
+                            sleep(2)
+                    cout<<"Obtienes 20 monedas de plata";
+                    return 0;
     }
         if (accion == "2")
     {
