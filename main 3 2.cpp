@@ -150,6 +150,21 @@ int main()
                     cout<<"Bueno si es lo que quieres.";
 
                 }
+if (accion == "2")
+                    cout<<name<<": Buenas, ¿podría prepararme un bacalao con tomate, preferiblemente con el tomate entero?"<<endl;
+                        cout.flush();
+                            sleep(2);     
+                    cout<<"Tabernero: ...Enseguida se lo preparo"<<endl;
+                        cout.flush();
+                            sleep(2);
+                    cout<<"Te comes el bacalao y llevas el tomate al viajero..."<<endl;
+                        cout.flush();
+                            sleep(2);
+                    cout<<"Viajero: ¿Obtuviste el tomate? Le estaré agradecido por siempre, acepte esto como ofrenda por sus molestias"<<endl;
+                        cout.flush();
+                            sleep(2);
+                    cout<<"Obtienes 20 monedas de plata";
+                    return 0;
             }
             
     }
