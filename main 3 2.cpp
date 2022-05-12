@@ -151,6 +151,7 @@ int main()
 
                 }
                 if (accion == "2")
+                {
                     cout<<name<<": Buenas, ¿podría prepararme un bacalao con tomate, preferiblemente con el tomate entero?"<<endl;
                         cout.flush();
                             sleep(2);     
@@ -165,6 +166,7 @@ int main()
                             sleep(2);
                     cout<<"Obtienes 20 monedas de plata";
                     return 0;
+                    }
             }
             
     }
