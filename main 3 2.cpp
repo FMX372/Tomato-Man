@@ -150,7 +150,7 @@ int main()
                     cout<<"Bueno si es lo que quieres.";
 
                 }
-if (accion == "2")
+                if (accion == "2")
                     cout<<name<<": Buenas, ¿podría prepararme un bacalao con tomate, preferiblemente con el tomate entero?"<<endl;
                         cout.flush();
                             sleep(2);     
