@@ -101,7 +101,7 @@ int main()
                             sleep(2);
                     cout<<"Viajero: ¿Obtuviste el tomate? Le estaré agradecido por siempre, acepte esto como ofrenda por sus molestias"<<endl;
                         cout.flush();
-                            sleep(2)
+                            sleep(2);
                     cout<<"Obtienes 20 monedas de plata";
                     return 0;
     }
