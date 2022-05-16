@@ -2,12 +2,11 @@
 #include <string>
 /*Solo funcional en linux o GDB*/
 #include <unistd.h>
-
 using namespace std;
-
 int main()
 {
-    string name,respuesta,accion,dar;
+    string name,respuesta,dar;
+    int dinero = 10,accion;
     /*Intro al juego*/
     cout<<"Estás haciendo un viaje en Noruega, 1532, un viajero se te acerca."<<endl;
         cout.flush();
@@ -16,10 +15,14 @@ int main()
     cin>>name;
     if (name == "No")
     {
-        cout.flush();
-            sleep(2);
-        cout<<"Siento molestarle, un saludo.";
-        return 0;
+            cout.flush();
+                sleep(2);
+            cout<<"Siento molestarle, un saludo."<<endl;
+            cout.flush();
+                sleep(2);
+            cout<<"Dinero final: ";
+            cout<<dinero;
+            return 0;
     }
     else
     {
@@ -46,7 +49,8 @@ int main()
     cout<<"Misión: Dar un tomate al viajero"<<endl<<"Opciones:"<<endl<<"1.Ir cuesta abajo."<<endl<<"2.Preguntar para qué quiere un tomate."<<endl<<"3.Buscar en tu zurrón."<<endl<<"Opción: ";
     cin>>accion;
     /*Opciones a elegir*/
-        if (accion == "1")
+    do  {
+        if (accion == 1)
     {
                 cout.flush();
                     sleep(1);
@@ -58,7 +62,7 @@ int main()
                     sleep(2);
             cout<<"Elija una opción: | 1-Pedir tomate | 2-Pedir Bacalao con tomate |"<<endl;
             cin>>accion;
-                if (accion == "1")
+                if (accion == 1)
                 {
                         cout.flush();
                             sleep(1);
@@ -86,26 +90,41 @@ int main()
                     cout<<"Viajero: ¿Ya regresaste? ¿Obtuviste el tomate? Le estaré eternamente agradecido, tome, por las molestias"<<endl;
                         cout.flush();
                             sleep(2);
-                    cout<<"Obtienes 20 monedas de plata";
+                    cout<<"Obtienes 20 monedas";
+                        cout.flush();
+                            sleep(1);
+                    cout<<"Dinero final= ";
+                    cout<<dinero + 20;
                     return 0;
                 }
-                    if (accion == "2")
+                    if (accion == 2)
                     cout<<name<<": Buenas, ¿podría prepararme un bacalao con tomate, preferiblemente con el tomate entero?"<<endl;
                         cout.flush();
                             sleep(2);     
                     cout<<"Tabernero: ...Enseguida se lo preparo"<<endl;
                         cout.flush();
                             sleep(2);
+                    cout<<"Gastas 10 monedas";
+                        cout.flush();
+                            sleep(1);
+                    cout<<"Dinero actual= ";
+                    cout<<dinero - 10;
+                        cout.flush();
+                            sleep(2);                            
                     cout<<"Te comes el bacalao y llevas el tomate al viajero..."<<endl;
                         cout.flush();
                             sleep(2);
                     cout<<"Viajero: ¿Obtuviste el tomate? Le estaré agradecido por siempre, acepte esto como ofrenda por sus molestias"<<endl;
                         cout.flush();
                             sleep(2);
-                    cout<<"Obtienes 20 monedas de plata";
+                    cout<<"Obtienes 20 monedas";
+                        cout.flush();
+                            sleep(1);
+                    cout<<"Dinero final= ";
+                    cout<<dinero + 20;
                     return 0;
     }
-        if (accion == "2")
+        if (accion == 2)
     {
                 cout.flush();
                     sleep(2);
@@ -126,31 +145,48 @@ int main()
             cout<<"Opciones:"<<endl<<"1.Ir cuesta abajo."<<endl<<"2.Buscar en tu zurrón."<<endl<<"Opción: ";
             cin>>accion;
         /*Sub-acciones de acción 2*/
-            if (accion == "1")
+            if (accion == 1)
             {
                 cout<<endl<<"Bajas la cuesta y llegas a una taberna"<<endl;
                 cout.flush();
                     sleep(2);
             cout<<"Tabernero: Buenas, ¿que le puedo servir?"<<endl<<"Elija una opción: | 1-Pedir tomate | 2-Pedir Bacalao con tomate |"<<endl;
             cin>>accion;
-                if (accion == "1")
+                if (accion == 1)
                 {
                     cout<<name<<"¿Podrías darme un tomate?"<<endl;
                     cout<<"Tabernero: ¿Un tomate?";
                 /*Esto hace que aparezca el texto cada X segundos*/
-                    cout.flush();
-                    sleep(1);
+                        cout.flush();
+                            sleep(1);
                     cout<<".";
-                    cout.flush();                                                                                 
-                    sleep(1);
+                        cout.flush();                                                                                 
+                            sleep(1);
                     cout<<".";
-                    cout.flush();                                                                                 
-                    sleep(1);
+                        cout.flush();                                                                                 
+                            sleep(1);
                     cout<<".";
-                    cout<<"Bueno si es lo que quieres.";
+                    cout<<"Bueno si es lo que necesitas... No debería cobrarle por esto."<<endl;
+                        cout.flush();                                                                                 
+                            sleep(1);
+                    cout<<"Recibes un tomate"<<endl;
+                        cout.flush();                                                                                 
+                            sleep(1);
+                    cout<<"Subes la colina de nuevo y te encuentras con el viajero."<<endl;
+                        cout.flush();
+                            sleep(2);
+                    cout<<"Viajero: ¿Ya has regresado? ¿Conseguiste el tomate? Te estaré eternamente agradecido, toma, por las molestias"<<endl;
+                        cout.flush();
+                            sleep(3);
+                    cout<<"Obtienes 20 monedas"<<endl;
+                        cout.flush();
+                            sleep(1);
+                    cout<<"Dinero final= ";
+                    cout<<dinero + 20;
+                    return 0;
 
                 }
-                if (accion == "2")
+                if (accion == 2)
                 {
                     cout<<name<<": Buenas, ¿podría prepararme un bacalao con tomate, preferiblemente con el tomate entero?"<<endl;
                         cout.flush();
@@ -158,21 +194,32 @@ int main()
                     cout<<"Tabernero: ...Enseguida se lo preparo"<<endl;
                         cout.flush();
                             sleep(2);
+                    cout<<"Gastas 10 monedas";
+                        cout.flush();
+                            sleep(1);
+                    cout<<"Dinero actual= ";
+                    cout<<dinero - 10;
+                        cout.flush();
+                            sleep(2);                            
                     cout<<"Te comes el bacalao y llevas el tomate al viajero..."<<endl;
                         cout.flush();
                             sleep(2);
                     cout<<"Viajero: ¿Obtuviste el tomate? Le estaré agradecido por siempre, acepte esto como ofrenda por sus molestias"<<endl;
                         cout.flush();
-                            sleep(2);
-                    cout<<"Obtienes 20 monedas de plata";
+                            sleep(3);
+                    cout<<"Obtienes 20 monedas"<<endl;
+                        cout.flush();
+                            sleep(1);
+                    cout<<"Dinero final= ";
+                    cout<<dinero + 20;
                     return 0;
                     }
             }
-            
+
     }
     
     
-        if (accion == "3")
+        if (accion == 3)
     {
                 cout.flush();
                     sleep(2);
@@ -197,7 +244,7 @@ int main()
                 cout<<"Opciones:"<<endl<<"1.Ir cuesta abajo."<<endl<<"2.Preguntar para qué quiere un tomate."<<endl<<"Opción: ";
                 cin>>accion;
             /*Sub-acciones de acción 3*/
-                if (accion == "1")
+                if (accion == 1)
     {
                 cout.flush();
                     sleep(1);
@@ -209,7 +256,7 @@ int main()
                     sleep(2);
             cout<<"Elija una opción: | 1-Pedir tomate | 2-Pedir Bacalao con tomate |"<<endl;
             cin>>accion;
-                if (accion == "1")
+                if (accion == 1)
                 {
                         cout.flush();
                             sleep(1);
@@ -235,7 +282,7 @@ int main()
                 }
             
     }
-                if (accion == "2")
+                if (accion == 2)
             {
                     cout.flush();
                         sleep(2);
@@ -258,5 +305,7 @@ int main()
         }
     }
     return 0;
+    }while (accion != 1,2,3);
+    cout<<"No es una opción válida";
 }
 /*Honestamente no sé ni como sigue funcionando*/
