@@ -46,11 +46,9 @@ int main()
         }
         cout.flush();
             sleep(5);
-    do{
         cout<<"Misión: Dar un tomate al viajero"<<endl<<"Opciones:"<<endl<<"1.Ir cuesta abajo."<<endl<<"2.Preguntar para qué quiere un tomate."<<endl<<"3.Buscar en tu zurrón."<<endl<<"Opción: ";
         cin>>accion;
-    }
-    while (accion == 1,2,3);
+    do {
     /*Opciones a elegir*/
         if (accion == 1)
     {
@@ -307,5 +305,9 @@ int main()
         }
     }
     return 0;
+    }
+    while (accion != 1,2,3); {
+        cout<<"Not a valid option";
+    }
 }
 /*Honestamente no sé ni como sigue funcionando*/
