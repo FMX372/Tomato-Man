@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
     string name,respuesta,dar;
-    int dinero = 10,accion;
+    int dinero = 10,accion,accion1,accion2;
     /*Intro al juego*/
     cout<<"Estás haciendo un viaje en Noruega, 1532, un viajero se te acerca."<<endl;
         cout.flush();
@@ -31,7 +31,7 @@ int main()
     cout<<"Viajero: Encantado de conocerle "<<name<<", me preguntaba si podrías hacerme un favor, te pagaré bien. "<<endl<<name<<": ";
     }
     cin>>respuesta;
-        if (respuesta == "Si")
+        if (respuesta == "Si","si","SI","yes","Yes","YES")
         {
             cout.flush();
                 sleep(1);
@@ -61,8 +61,9 @@ int main()
                 cout.flush();
                     sleep(2);
             cout<<"Elija una opción: | 1-Pedir tomate | 2-Pedir Bacalao con tomate |"<<endl;
-            cin>>accion;
-                if (accion == 1)
+            cin>>accion1;
+            do{
+                if (accion1 == 1)
                 {
                         cout.flush();
                             sleep(1);
@@ -97,7 +98,8 @@ int main()
                     cout<<dinero + 20;
                     return 0;
                 }
-                    if (accion == 2)
+                    if (accion1 == 2)
+                {    
                     cout<<name<<": Buenas, ¿podría prepararme un bacalao con tomate, preferiblemente con el tomate entero?"<<endl;
                         cout.flush();
                             sleep(2);     
@@ -123,6 +125,10 @@ int main()
                     cout<<"Dinero final= ";
                     cout<<dinero + 20;
                     return 0;
+                }
+            }
+            while (accion1 <= 1 || accion1 >= 2);
+            cout<<"no";
     }
         if (accion == 2)
     {
@@ -143,9 +149,10 @@ int main()
                     sleep(1);
                     cout<<"."<<endl<<endl;
             cout<<"Opciones:"<<endl<<"1.Ir cuesta abajo."<<endl<<"2.Buscar en tu zurrón."<<endl<<"Opción: ";
-            cin>>accion;
+            cin>>accion2;
+        do{
         /*Sub-acciones de acción 2*/
-            if (accion == 1)
+            if (accion2 == 1)
             {
                 cout<<endl<<"Bajas la cuesta y llegas a una taberna"<<endl;
                 cout.flush();
@@ -186,7 +193,7 @@ int main()
                     return 0;
 
                 }
-                if (accion == 2)
+                if (accion2 == 2)
                 {
                     cout<<name<<": Buenas, ¿podría prepararme un bacalao con tomate, preferiblemente con el tomate entero?"<<endl;
                         cout.flush();
@@ -215,7 +222,8 @@ int main()
                     return 0;
                     }
             }
-
+        }
+        while (accion2 <= 1 || accion2 >= 2);
     }
     
     
@@ -304,10 +312,9 @@ int main()
             }
         }
     }
+    cout<<"No es una opción válida";
     return 0;
     }
-    while (accion != 1,2,3); {
-        cout<<"Not a valid option";
-    }
+    while (accion != 1,2,3); 
 }
 /*Honestamente no sé ni como sigue funcionando*/
